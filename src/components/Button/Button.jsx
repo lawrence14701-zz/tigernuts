@@ -1,13 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./Button.css";
 
-function Button(props) {
-  const {} = props;
-
-  return <button>Learn More</button>;
+function Button({ link }) {
+  return (
+    <a
+      className="link"
+      href="https://www.amazon.com/Premium-Organic-Tiger-Nuts-Friendly/dp/B07WD68S8Q"
+    >
+      Buy it Now
+    </a>
+  );
 }
-
-Button.propTypes = {};
 
 export default Button;
