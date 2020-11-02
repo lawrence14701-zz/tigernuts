@@ -1,6 +1,6 @@
 .buy-container {
   width: 100%;
-  height: 400px;
+  height: 500px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -24,4 +24,10 @@
 
 .buy-button {
   position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  .buy-container {
+    height: 200px;
+  }
 }
