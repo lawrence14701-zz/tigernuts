@@ -7,7 +7,7 @@ function Header(props) {
   const {} = props;
 
   return (
-    <div className="container">
+    <div className="header-container">
       <div className="div-one"></div>
 
       <div className="div-two"></div>
