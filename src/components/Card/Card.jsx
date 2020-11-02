@@ -2,17 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Card.css";
 
-function Card(props) {
-  const {} = props;
-
+function Card({ img }) {
   return (
     <div className="container">
-      <img alt="hi" href="http://placekitten.com/200/300" />
-      dsajklsd
+      <div className="image-container">
+        <img className="display-image" alt="hi" src={img} />
+      </div>
+      <div className="text-container">
+        <h1>What are tiger nuts</h1>
+        <p></p>
+      </div>
     </div>
   );
 }
 
-Card.propTypes = {};
+Card.propTypes = {
+  img: PropTypes.string,
+};
 
 export default Card;
