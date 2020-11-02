@@ -1,11 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./Header.css";
 import { Link } from "react-scroll";
 
-function Header(props) {
-  const {} = props;
-
+function Header() {
   return (
     <div className="header-container">
       <div className="div-one"></div>
@@ -28,10 +25,8 @@ function Header(props) {
             hashSpy={true}
             offset={50}
             duration={500}
-            delay={1000}
+            delay={500}
             isDynamic={true}
-            // onSetActive={this.handleSetActive}
-            // onSetInactive={this.handleSetInactive}
             ignoreCancelEvents={false}
           >
             Learn more
