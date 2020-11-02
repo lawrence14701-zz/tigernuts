@@ -74,7 +74,6 @@ div {
 h2,
 h3 {
   font-size: 4vh;
-  padding: 0 1em;
   font-family: Quicksand;
 }
 
@@ -82,4 +81,32 @@ h3 {
   font-size: 7vh;
   padding: 0 1em;
   font-family: Quicksand;
+}
+
+.button {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border: none;
+  font-size: 0.5em;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  transition: 1s;
+  position: relative;
+  word-wrap: break-word;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
 }

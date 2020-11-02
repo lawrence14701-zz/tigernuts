@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button from "../Button/Button";
 import "./Header.css";
+import { Link } from "react-scroll";
 
 function Header(props) {
   const {} = props;
@@ -19,7 +19,24 @@ function Header(props) {
         <br />
         <h2>From Ghana, Africa, The best nut free nut</h2>
         <br />
-        <Button />
+        <div className="button">
+          <Link
+            activeClass="active"
+            to="main"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+            delay={1000}
+            isDynamic={true}
+            // onSetActive={this.handleSetActive}
+            // onSetInactive={this.handleSetInactive}
+            ignoreCancelEvents={false}
+          >
+            Learn more
+          </Link>
+        </div>
       </div>
     </div>
   );
